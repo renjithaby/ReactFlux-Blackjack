@@ -1,0 +1,37 @@
+/**  CSS styles for GameUI component */
+.table-ui{
+    text-align: center;
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom:2vh;
+}
+.table-ui button {
+    outline: none;
+}
+
+.table-ui .btn {
+    display: inline-block;
+    height: 10vh;
+    width: 10vh;
+    margin:1em;
+    padding:0;
+    border-radius: 50%;
+    border: 1px solid #ffbf00 ;
+    background-color: #ba3222;
+    color: white;
+    font-size: 1em;
+    text-align:center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+.table-ui .btn:hover {
+    background-color: #FF1A00;
+    cursor:pointer ;
+}
+
+.table-ui .btn.disable {
+    background-color: #4c0f08;
+    color: grey;
+    cursor:default;
+}

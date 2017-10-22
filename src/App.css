@@ -1,0 +1,89 @@
+
+/** CSS style for  App Component  */
+
+.App{
+    height:100%;
+    background-color: green;
+}
+
+.App ul{
+    padding:0;
+    margin:0
+}
+.App li{
+    display :inline-block;
+    list-style-type:none;
+}
+/* arrange the card partaily top of another*/
+.App li:nth-child(n+2){
+    margin-left:-8vh;
+}
+/* set delear card deal animation */
+.App .delear li:nth-last-child(1){
+    animation:delear-deal-animation .1s;
+}
+/* set player card deal animation */
+.App .player li:nth-last-child(1){
+    animation:player-deal-animation .1s;
+}
+
+.App .play-table{
+    display:block;
+    position: relative;
+    min-height: 70vh;
+    top:3vh;
+}
+.App .current-score{
+    color:white;
+    font-size: 1.4em;
+}
+.App .game-result{
+    position: absolute;
+    top: 35vh;
+    color: white;
+    font-size: 2em;
+    width:100vw;
+    text-align:center;
+
+}
+
+.App .deck{
+    position: absolute;
+    right: 1em;
+    top: 28vh;
+    width: 12vh;
+    height: 15vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    background-color: red;
+    border: solid 2px black;
+}
+
+.App .delear{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    top:0vh;
+    text-align: center;
+}
+
+.App .player{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    bottom:1vh;
+    text-align: center;
+}
+
+/*  deal animation defintion  */
+@keyframes player-deal-animation {
+    from { transform: translate(150px,-28vh); }
+    to { transform: translate(0px,0px); }
+}
+
+@keyframes delear-deal-animation {
+    from { transform: translate(150px,28vh); }
+    to { transform: translate(0px,0px); }
+}
